@@ -1,0 +1,658 @@
+body,
+h1,
+h2,
+h3,
+p,
+a,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-home {
+    position: relative;
+    color: #F7F8FA;
+    background: #fff url('img/home/Image.png') no-repeat top center;
+    background-size: 100% auto;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.header-home a {
+    color: #F7F8FA;
+}
+
+.header-home .header-background {
+    width: 100%;
+    height: auto;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    opacity: 0;
+}
+
+.header-home .center-line {
+    position: absolute;
+    top: 50%;
+    height: 0.95px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 43px 68px 0 60px;
+}
+
+.header-top div:not(.header-home-link) {
+    z-index: 1;
+}
+
+.header-content .futura-pt {
+    text-transform: uppercase;
+    text-align: left;
+    font: normal normal 500 14px/19px "Futura PT";
+    letter-spacing: 10.5px;
+}
+
+.header-home-link {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font: normal normal 500 18px/24px 'Big Caslon';
+    letter-spacing: 2px;
+}
+
+.header-top .cart .span-cart {
+    padding-right: 30px;
+}
+
+.header-top .burger-btn {
+    cursor: pointer;
+    margin-left: 75px;
+}
+
+.header-middle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-middle .presents {
+    margin-top: 45px;
+}
+
+.header-middle .sarah-presents {
+    font: normal normal 500 140px/114px 'Big Caslon';
+}
+
+.header-middle .presents-selected {
+    margin-top: 42px;
+    font: normal normal 500 30px/37px 'Big Caslon';
+    letter-spacing: 1.8px;
+}
+
+.header-middle .story-column .influencer {
+    text-transform: uppercase;
+    font: normal normal 400 20px/76px 'Futura PT';
+    letter-spacing: 30px;
+}
+
+.header-middle .story-column .influencer:first-child {
+    margin-top: 50px;
+}
+
+.header-middle .story {
+    margin-top: 200px;
+}
+
+.header-middle .story span {
+    position: relative;
+    display: inline-block;
+    font: normal normal 400 76px/99px 'Poppins';
+}
+
+.header-middle .story span::after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: #F7F8FA;
+}
+
+.header-bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+}
+
+.header-bottom-menu {
+    margin-left: 60px;
+    font: normal normal 400 20px/26px 'Futura PT';
+}
+
+.header-bottom-menu .yt {
+    margin-right: 42px;
+}
+
+.header-bottom .subscribe {
+    position: absolute;
+    right: 68px;
+}
+
+.welcome-block {
+    margin-left: 70px;
+    height: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #363636;
+}
+
+.welcome-block .meet-me {
+    text-transform: uppercase;
+    font: normal normal 500 14px/18px 'Futura PT';
+}
+
+.welcome-block .big-text {
+    margin-top: 100px;
+    font: normal normal 500 115px/139px 'Big Caslon';
+    letter-spacing: -2.99px;
+}
+
+.welcome-block .small-text {
+    font: normal normal 500 80px/97px 'Big Caslon';
+}
+
+.welcome-block .more-about {
+    margin-right: 150px;
+    align-items: center;
+}
+
+.orange-link {
+    margin-right: 15px;
+    position: relative;
+    align-items: center;
+    text-transform: uppercase;
+    font: normal normal 500 14px/18px 'Futura PT';
+    letter-spacing: 24px;
+    color: #FA6A18;
+}
+
+.orange-link::after {
+    content: '';
+    position: absolute;
+    top: 33px;
+    left: -11px;
+    right: 0;
+    height: 2px;
+    width: 132px;
+    background-color: #FA6A18;
+}
+
+:root {
+    --black-block-top: 1843px;
+    --calc-reference-width: 1920;
+    --calc-reference-height: 1080;
+}
+
+.table-of-contents {
+    position: relative;
+    height: 945px;
+    color: white;
+    background-color: black;
+}
+
+.table-of-contents img:not(.arrow-down) {
+    position: absolute;
+}
+
+.table-of-contents .img-1 {
+    top: calc(1729px - var(--black-block-top));
+    left: calc(calc(1439 / var(--calc-reference-width)) * 100%);
+    width: calc(calc(171 / var(--calc-reference-width)) * 100%);
+    height: auto;
+}
+
+.table-of-contents .img-2 {
+    top: calc(1968px - var(--black-block-top));
+    left: calc(calc(945 / var(--calc-reference-width)) * 100%);
+    width: calc(calc(229 / var(--calc-reference-width)) * 100%);
+    height: auto;
+}
+
+.table-of-contents .img-3 {
+    top: calc(2525px - var(--black-block-top));
+    left: calc(calc(171 / var(--calc-reference-width)) * 100%);
+    width: calc(calc(292 / var(--calc-reference-width)) * 100%);
+    height: auto;
+}
+
+.table-of-contents .img-4 {
+    top: calc(2316px - var(--black-block-top));
+    right: 0;
+    width: calc(calc(228 / var(--calc-reference-width)) * 100%);
+    height: auto;
+}
+
+.table-of-contents .img-5 {
+    top: calc(2581px - var(--black-block-top));
+    right: 137px;
+    width: calc(calc(364 / var(--calc-reference-width)) * 100%);
+    height: auto;
+}
+
+.table-of-contents .what-i-do {
+    position: absolute;
+    top: calc(2064px - var(--black-block-top));
+    left: calc(calc(171 / var(--calc-reference-width)) * 100%);
+    width: 410px;
+    text-transform: uppercase;
+    text-align: left;
+    font: normal normal 400 20px/76px 'Futura PT';
+    letter-spacing: 30px;
+}
+
+.table-of-contents .content-menu {
+    position: absolute;
+    top: calc(2239px - var(--black-block-top));
+    left: calc(calc(701 / var(--calc-reference-width)) * 100%);
+    right: calc(calc(701 / var(--calc-reference-width)) * 100%);
+    width: 518px;
+    /* margin-top: 10%; */
+}
+
+.table-of-contents .menu-item {
+    text-transform: uppercase;
+    text-align: center;
+    font: normal normal 400 60px/68px 'Poppins';
+    z-index: 1;
+}
+
+.table-of-contents .serv {
+    margin-top: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    font: normal normal 400 14px/21px 'Poppins';
+    letter-spacing: 2.33px;
+    color: #FA6A18;
+}
+
+.table-of-contents .arrow-down {
+    margin-top: 58px;
+}
+
+
+/* 
+@media (max-width: 1920px) and (min-width: 800px) {
+    .videos-block {
+        height: 768px;
+        background: #A89083 url('img/Home/Image-3.png') no-repeat center;
+        background-size: cover;
+    }
+    .videos-block .btn {
+        margin-bottom: 35px;
+        padding: 137px 108px;
+        border: 1px solid #000000;
+        border-radius: 50%;
+    }
+} */
+
+@media (min-width: 1920px) {
+    .videos-block {
+        /* height: calc(calc(1080px / var(--calc-reference-height)) * 100%); */
+        height: 1080px;
+        background: #A89083 url('img/Home/Image-3.png') no-repeat center;
+        background-size: cover;
+    }
+    .videos-block .btn {
+        margin-bottom: 123px;
+        padding: 166px 137px;
+        border: 1px solid #000000;
+        border-radius: 50%;
+    }
+}
+
+.videos-block .videos-block-content {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.videos-block .btn .play-icon {
+    margin-right: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.videos-block .play-video-btn {
+    text-transform: uppercase;
+    font: normal normal 500 18px/23px 'Futura PT';
+    letter-spacing: 4.68px;
+    color: black;
+}
+
+.videos-block .caption {
+    width: 415px;
+    margin-bottom: 71.2px;
+    text-transform: uppercase;
+    text-align: center;
+    font: normal normal 400 14px/30px 'Futura PT';
+    letter-spacing: 5px;
+    color: #FFFFFF;
+}
+
+.videos-block .caption p:first-child {
+    margin-bottom: 35px;
+}
+
+.my-products-top {
+    height: 654px;
+    color: #000000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.my-products-top .column:first-child {
+    margin-left: 171px;
+}
+
+.my-products-top .column:last-child {
+    margin-top: 130px;
+    margin-left: 367px;
+}
+
+.my-products-top .title {
+    margin-bottom: 77px;
+    text-transform: uppercase;
+    font: normal normal 500 14px/18px 'Futura PT';
+    letter-spacing: 4px;
+}
+
+.my-products-top .underline-shop {
+    position: relative;
+    font: normal normal 400 76px/99px 'Poppins';
+}
+
+.my-products-top .shop-by::after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    width: 312px;
+    background-color: #000000;
+}
+
+.my-products-top .categories::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: #000000;
+}
+
+.my-products-top .categories-name {
+    text-transform: uppercase;
+    font: normal normal 400 20px/73px 'Futura PT';
+    letter-spacing: 30px;
+}
+
+.double-section {
+    background-color: #E8E8E8;
+}
+
+.clothing-block .content {
+    width: 1575px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clothing-block .content img {
+    cursor: pointer;
+}
+
+.clothing-block .big-card {
+    margin-top: 65px;
+    margin-left: 60px;
+}
+
+.clothing-block .big-card .column {
+    margin-top: 61px;
+    margin-left: 105px;
+}
+
+.clothing-block .big-card .item-description {
+    font: normal normal 400 18px/48px 'Poppins';
+}
+
+.clothing-block .item-name {
+    font: normal normal 400 28px/28px 'Poppins';
+    color: #090909;
+}
+
+.clothing-block .plus {
+    margin-top: 5px;
+    margin-left: 308px;
+    font: normal normal 300 120px/154px 'Futura PT';
+    letter-spacing: -3px;
+    color: #2B2B2B;
+    cursor: pointer;
+}
+
+.clothing-block .title {
+    margin-top: 184px;
+    margin-bottom: 131px;
+    text-transform: uppercase;
+    text-align: center;
+    font: normal normal 500 14px/18px 'Futura PT';
+    letter-spacing: 4px;
+}
+
+.clothing-block .small-card {
+    margin-bottom: 208px;
+}
+
+.clothing-block .small-card .item-name {
+    margin-top: 64px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.clothing-block .small-card .available {
+    text-align: center;
+    font: normal normal 400 18px/27px 'Poppins';
+    opacity: 0.3;
+}
+
+.clothing-block .orange-link {
+    text-align: center;
+}
+
+.clothing-block .orange-link::after {
+    left: 72px;
+    width: 258px;
+}
+
+.talk-to-me {
+    padding-top: 260px;
+    padding-bottom: 157px;
+    display: flex;
+    color: #363636;
+    justify-content: center;
+    align-items: center;
+}
+
+.talk-to-me .title {
+    margin-bottom: 73px;
+    text-transform: uppercase;
+    font: normal normal 500 14px/18px 'Futura PT';
+    letter-spacing: 4px;
+}
+
+.talk-to-me .big-text {
+    font: normal normal 500 115px/139px 'Big Caslon';
+    letter-spacing: -2.99px;
+}
+
+.talk-to-me .small-text {
+    font: normal normal 500 80px/97px 'Big Caslon';
+    letter-spacing: -2px;
+}
+
+.talk-to-me .collaborations {
+    align-items: center;
+}
+
+.talk-to-me .orange-link::after {
+    left: -7px;
+    width: 91px;
+}
+
+.talk-to-me .caption {
+    width: 383px;
+    margin-top: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    font: normal normal 400 14px/30px 'Futura PT';
+    letter-spacing: 5px;
+    color: #2C2C2C;
+}
+
+.talk-to-me .caption p:first-of-type {
+    margin-bottom: 35px;
+}
+
+footer.footer-home {
+    height: 1080px;
+    position: relative;
+    color: white;
+    background-color: #000000;
+}
+
+.footer-home img {
+    position: absolute;
+}
+
+.footer-home .img-1 {
+    bottom: 925px;
+    left: 171px;
+    width: 171px;
+    height: 229px;
+}
+
+.footer-home .img-2 {
+    bottom: 644px;
+    left: calc(calc(970 / var(--calc-reference-width)) * 100%);
+    width: 229px;
+    height: auto;
+}
+
+.footer-home .check-out {
+    position: absolute;
+    bottom: 667px;
+    left: 171px;
+    width: 385px;
+    text-transform: uppercase;
+    font: normal normal 400 20px/76px 'Futura PT';
+    letter-spacing: 30px;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.footer-home .content-menu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    align-items: center;
+    justify-content: flex-end;
+    text-transform: uppercase;
+}
+
+.footer-home .content-menu .menu-item {
+    cursor: pointer;
+    font: normal normal 400 60px/70px 'Poppins';
+}
+
+.footer-home .caption {
+    width: 369px;
+    margin-top: 87px;
+    text-align: center;
+    font: normal normal 400 14px/30px 'Futura PT';
+    letter-spacing: 5px;
+}
+
+.footer-home .caption p:first-child {
+    margin-bottom: 35px;
+}
+
+.footer-home {
+    width: 100%;
+    position: relative;
+}
+
+.footer-bottom-menu {
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+}
+
+.footer-bottom-menu a {
+    color: white;
+    font: normal normal 400 20px/26px 'Futura PT';
+}
+
+.footer-bottom-menu .yt {
+    margin-left: 60px;
+    margin-right: 42px;
+}
+
+.footer-bottom .subscribe {
+    position: absolute;
+    right: 68px;
+}
