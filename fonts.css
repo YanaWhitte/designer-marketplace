@@ -1,29 +1,29 @@
 @font-face {
-    font-family: "Big Caslon";
-    src: url(fonts/Big-Caslon-Medium.ttf);
-    font-weight: 500;
+  font-family: "Big Caslon";
+  src: url(fonts/Big-Caslon-Medium.ttf);
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: "Poppins";
-    src: url(fonts/Poppins-Regular-400.ttf);
-    font-weight: 400;
+  font-family: "Poppins";
+  src: url(fonts/Poppins-Regular-400.ttf);
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: "Futura PT";
-    src: url(fonts/FUTURAPTBOOK.OTF);
-    font-weight: 400;
+  font-family: "Futura PT";
+  src: url(fonts/FUTURAPTBOOK.OTF);
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: "Futura PT";
-    src: url(fonts/FUTURAPTLIGHT.OTF);
-    font-weight: 300;
+  font-family: "Futura PT";
+  src: url(fonts/FUTURAPTLIGHT.OTF);
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: "Futura PT";
-    src: url(fonts/FUTURAPTMEDIUM.OTF);
-    font-weight: 500;
+  font-family: "Futura PT";
+  src: url(fonts/FUTURAPTMEDIUM.OTF);
+  font-weight: 500;
 }

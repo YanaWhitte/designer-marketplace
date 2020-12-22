@@ -1,17 +1,17 @@
 @media (max-width: 1919px) and (min-width: 800px) {
-    .videos-block {
-        height: 768px;
-        background: #A89083 url('img/Home/Image-3.png') no-repeat center;
-        background-size: cover;
-    }
-    .videos-block .btn {
-        margin-bottom: 35px;
-        padding: 137px 108px;
-        border: 1px solid #000000;
-        border-radius: 50%;
-    }
-    .clothing-block .big-card {
-        margin-top: 65px;
-        margin-left: 10px;
-    }
+  .videos-block {
+    height: 768px;
+    background: #a89083 url("img/Home/Image-3.png") no-repeat center;
+    background-size: cover;
+  }
+  .videos-block .btn {
+    margin-bottom: 35px;
+    padding: 137px 108px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+  }
+  .clothing-block .big-card {
+    margin-top: 65px;
+    margin-left: 10px;
+  }
 }
